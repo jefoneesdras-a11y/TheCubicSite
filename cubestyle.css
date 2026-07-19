@@ -1,0 +1,229 @@
+body {
+  background-color: rgb(12, 12, 12);
+  margin: 0;
+}
+header {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://i.pinimg.com/originals/c0/a9/c6/c0a9c6ebfcd2228252859e228f24c95b.jpg");
+}
+div.blackbg {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 600px;
+  height: 100px;
+  max-width: 90%;
+  height: auto;
+  margin: 0px auto 0px auto;
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+/* the stuff above is for general header of all pages and aplies globaly*/
+h3 {
+  font-family: "Saira", sans-serif;
+  font-size: 30px;
+  color: white;
+  margin: 0 0 5px 0;
+}
+.custom-placement {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1000;
+  background: none;
+  border: none;
+}
+
+.custom-placement img {
+  width: 200px;
+  height: 150px;
+}
+a {
+  text-decoration: none;
+  color: rgb(152, 255, 216);
+}
+p.Credisaura {
+  font-family: "Saira";
+  font-size: 20px;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  font-family: "Orbitron";
+  color: white;
+}
+p {
+  font-family: "Comic Relief";
+  color: white;
+  font-size: 10px;
+  margin: 0 0 5px 0;
+}
+p.about-me {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 30px;
+}
+h2.navigator {
+  font-family: "Saira";
+  color: white;
+  font-size: 50px;
+  margin-left: 20px;
+}
+div.navigator {
+  border-color: white;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 8px 8px 8px 8px;
+  width: 430px;
+  height: 200px;
+  margin-top: -25px;
+  margin-left: 50px;
+  background-color: rgba(20, 20, 20, 0.8);
+}
+div.navigator nav {
+  height: 100%;
+}
+div.navigator nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+div.navigator nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100%;
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.726);
+}
+div.navigator a:hover {
+  color: #00ffb3;
+  font-size: 34px;
+}
+div.navigator a {
+  font-size: 30px;
+  font-family: "Saira", sans-serif;
+  transition:
+    color 0.2s,
+    font-size 0.2s;
+}
+.navigatorgroup {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 15px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+div.img {
+  margin-left: 20px;
+  margin-top: 50px;
+  height: 250px;
+  display: flex;
+}
+div.navigator nav ul li:hover {
+  background-color: #383838;
+}
+div.navigator nav ul li:nth-child(odd) {
+  border-right: 4px solid rgba(255, 255, 255, 0.829);
+}
+div.navigator nav ul li:nth-child(1),
+div.navigator nav ul li:nth-child(2) {
+  border-bottom: 4px solid rgba(255, 255, 255, 0.829);
+}
+div.img img {
+  width: auto;
+  height: 100%;
+  max-width: 450px;
+  display: block;
+}
+#nav-description {
+  width: 150px;
+  height: 200px;
+  min-width: 160px;
+  max-width: 150px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+div.nav-description {
+  width: 150px;
+}
+#nav-description p {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+#Navigator {
+  width: 100%;
+}
+/* the stuff above is just for the navigator btw :insert_crying_Face_emoji_here:, and some other stuff.*/
+/* the stuff below is for all pages.*/
+.back-btn {
+  font-family: "Saira", sans-serif;
+  color: rgb(152, 255, 216);
+  font-size: 30px;
+  display: inline-block;
+  transition:
+    color 0.2s,
+    font-size 0.2s;
+}
+
+.back-btn:hover {
+  color: #00ffb3;
+  font-size: 34px;
+}
+.page-container {
+  display: block;
+  padding-top: 20px;
+  box-sizing: border-box;
+  position: relative;
+  width: calc(100% - 300px);
+  margin: 0 0 0 150px;
+}
+.side-banner {
+  position: fixed;
+  top: 130px;
+  bottom: 0;
+  width: 150px;
+  background-image: url("https://i.pinimg.com/originals/c0/a9/c6/c0a9c6ebfcd2228252859e228f24c95b.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+.right-banner {
+  transform: scaleX(-1);
+  transform-origin: center;
+  right: 0;
+}
+.center-content {
+  padding: 0 0;
+  width: 100%;
+}
+.left-banner {
+  left: 0;
+}
+/*the stuff below will be for the about_me section only, (i decided that my code needs organizing. YAY!)*/
+div.myquote_about {
+  display: block;
+  width: 100%;
+  margin: 0 auto 80px auto;
+  box-sizing: border-box;
+}
+div.myquote_about p {
+  font-family: "Luxurious Script", cursive;
+  font-style: normal;
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+}
+.aboutpage .page-container {
+  text-align: center;
+}
